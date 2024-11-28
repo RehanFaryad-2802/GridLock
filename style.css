@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Bungee Tint", sans-serif;
+  list-style: none;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #30cfd0 0%,
+    #330867 100%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.options {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  column-gap: 30px;
+  background-color: black;
+}
+.user-op {
+  font-size: 5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: zoom 2s infinite;
+  cursor: pointer;
+  border: 0;
+}
+@keyframes zoom {
+    0%{scale: .9;}
+    50%{scale: 1;}
+    100%{scale: .9;}
+}
+.opt {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+.cover{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+.opt:hover{
+  border-bottom: 2px solid red;
+}
+.opt:active{
+  border-bottom: 0px solid red;
+}
+.btn {
+  color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #5d5d5d5c;
+  text-shadow: 0 0 40px #e10202;
+}
+.btn:hover {
+  box-shadow: 0 0 50px #e10202;
+}
+.user :where(p, div) {
+  color: Green;
+}
+.computer :where(p, div) {
+  color: red;
+}
+.status :where(p, h3) {
+  color: #ffffff;
+}
+.intro {
+  height: 80%;
+}
+.controler {
+  max-width: 300px;
+  display: grid;
+  margin: 0 auto;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
+.controler button {
+  font-size: 4rem;
+  margin: 1px;
+  border: 1px solid black;
+}
+.green{
+  text-shadow: 0 0 10px greenyellow;
+}
+.play_bord {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.l {
+  border-left: none !important;
+}
+.r {
+  border-right: none !important;
+}
+.t {
+  border-top: none !important;
+}
+.b {
+  border-bottom: none !important;
+}
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 20px;
+}
+:root {
+  --family: sans-serif;
+  --fl1: 0 0 10%;
+  --fl05: 0 0 5%;
+  --fl16: 0 0 16.67%;
+  --fl2: 0 0 20%;
+  --fl25: 0 0 25%;
+  --fl3: 0 0 30%;
+  --fl33: 0 0 33.3334%;
+  --fl4: 0 0 40%;
+  --fl5: 0 0 50%;
+  --fl6: 0 0 60%;
+  --fl7: 0 0 70%;
+  --fl75: 0 0 75%;
+  --fl8: 0 0 80%;
+  --fl9: 0 0 90%;
+  --fl10: 0 0 100%;
+  --fl11: 1 0 0;
+  --mc: #020087;
+  --hc: #000a52;
+  --mbg: var(--mc);
+  --container: 100%;
+  --hmc: #000947;
+  --hms: 3rem;
+  --hmic: #07004a;
+  --hmis: 1.8rem;
+  --pmc: #080038;
+  --pms: 1.09rem;
+  --pmic: #080038;
+  --pmis: 0.85rem;
+
+  --c1: #ffffff;
+  --c2: red;
+  --c3: red;
+  --c4: red;
+  --c5: red;
+}
+
+.c {
+  text-align: center;
+}
+
+.f {
+  display: flex;
+}
+
+.fw {
+  flex-wrap: wrap;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: end;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-around;
+}
+
+.aic {
+  align-items: center;
+}
+.dfa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p {
+  padding: 10px;
+}
+
+.p5 {
+  padding: 5px;
+}
+
+.m {
+  margin: 10px;
+}
+
+.m5 {
+  margin: 5px;
+}
+
+.f1 {
+  flex: var(--fl1);
+}
+
+.f16 {
+  flex: var(--fl16);
+}
+
+.f2 {
+  flex: var(--fl2);
+}
+
+.f3 {
+  flex: var(--fl3);
+}
+
+.f33 {
+  flex: var(--fl33);
+}
+
+.f4 {
+  flex: var(--fl4);
+}
+
+.f5 {
+  flex: var(--fl5);
+}
+
+.f6 {
+  flex: var(--fl6);
+}
+
+.f7 {
+  flex: var(--fl7);
+}
+
+.f75 {
+  flex: var(--fl75);
+}
+
+.f8 {
+  flex: var(--fl8);
+}
+
+.f9 {
+  flex: var(--fl9);
+}
+
+.f10 {
+  flex: var(--fl10);
+}
+
+.fa {
+  flex: var(--fl11);
+}
+
+.f05 {
+  flex: var(--fl05);
+}
+.cp {
+  cursor: pointer;
+}
+img[src] {
+  width: 100%;
+}
+
+.hm {
+  font-size: var(--hms);
+  color: var(--hmc);
+}
+
+.pm {
+  font-size: var(--pms);
+  color: var(--pmc);
+}
+
+.pmi {
+  font-size: var(--pmis);
+  color: var(--pmic);
+}
+
+.hmi {
+  font-size: var(--hmis);
+  color: var(--hmic);
+}
+
+.mbg {
+  background-color: var(--mc);
+}
+
+.hc {
+  color: var(--hc);
+}
+
+.hbg {
+  background-color: var(--hc);
+}
+.mc {
+  color: var(--mc);
+}
